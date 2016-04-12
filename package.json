@@ -1,0 +1,44 @@
+{
+    "name": "rig-unit-test",
+    "version": "1.0.0",
+    "author": "Vlad Filip ( vlad.filip.dev@gmail.com )",
+    "description": "",
+    "keywords": [
+        "rig",
+        "rigs",
+        "tool",
+        "plugin",
+        "rigsplugin",
+        "rigsfriendly",
+        "karma",
+        "jasmine",
+        "phantomjs"
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=5.8.0",
+        "npm": ">=3.7.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vladfilipro/rig-unit-test.git"
+    },
+    "bugs": {
+        "url": "https://github.com/vladfilipro/rig-unit-test/issues"
+    },
+    "dependencies": {
+        "gulp": "~3.9.1",
+        "karma": "~0.13.21",
+        "jasmine-core": "~2.4.0",
+        "karma-jasmine": "~0.3.7",
+        "karma-phantomjs-launcher": "~1.0.0",
+        "karma-browserify": "~5.0.2",
+        "phantomjs-prebuilt": "~2.1.4",
+        "angular-mocks": "~1.5.0",
+        "karma-coverage": "~0.5.3",
+        "watchify": "~3.7.0",
+        "browserify-istanbul": "~0.2.1"
+    },
+    "devDependencies": {},
+    "main": "./index.js"
+}
