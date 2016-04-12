@@ -2,7 +2,7 @@
     "name": "rig-unit-test",
     "version": "1.0.0",
     "author": "Vlad Filip ( vlad.filip.dev@gmail.com )",
-    "description": "",
+    "description": "A rig containing unit testing utilities",
     "keywords": [
         "rig",
         "rigs",

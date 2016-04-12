@@ -1,5 +1,5 @@
 # rig-unit-test
-A rig containing a task used for running unit tests using Karma
+A rig containing tasks used for running unit tests
 
 ## How to use
 1. Install rigs package: `npm install rigs`
