@@ -6,7 +6,7 @@ A rig containing tasks used for running unit tests
 2. Install rig-unit-test: `npm install rig-unit-test`
 
 ## Available tasks in rig-unit-test
-- `rig-unit-test__karma`: A task which runs Karma with the specific configuration
+- `rig-unit-test__karma`: A task which runs Karma with the specific configuration (suitable for browser testing - frontend)
   - properties:
     - `karma`: Object, contains Karma configuration. More info on [karma website](https://karma-runner.github.io/0.13/index.html)
 
@@ -52,6 +52,30 @@ A rig containing tasks used for running unit tests
             autoWatch: true,
             browsers: [ 'PhantomJS' ],
             singleRun: true
+        }
+    }
+    ```
+
+- `rig-unit-test__jasmine-node`: A task which runs Jasmine Node with the specific configuration (suitable for nodejs testing - backend)
+  - properties:
+    - `src`: String or Array, refers to the source files for code coverage
+    - `tests`: String or Array, refers to the source files of the unit tests
+    - `istanbul`: Object, refers to istanbul configuration. See more at [gulp-istanbul](https://www.npmjs.com/package/gulp-istanbul)
+    - `jasmine`: Object, refers to jasmine-node configuration. See more at [gulp-jasmine-node](https://www.npmjs.com/package/gulp-jasmine-node)
+    - `reports`: Object, refers to istanbul reporting configuration.
+
+    ```
+    {
+        taskname: 'rig-unit-test__karma',
+        dependency: [],
+        src: './src/**/*.js',
+        tests: './spec/**/*.js',
+        istanbul: { includeUntested: true },
+        jasmine: { timeout: 10000 },
+        reports: {
+            dir: './coverage',
+            reporters: [ 'lcov' ],
+            reportOpts: { dir: './coverage' }
         }
     }
     ```
