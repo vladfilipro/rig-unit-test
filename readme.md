@@ -56,22 +56,22 @@ A rig containing tasks used for running unit tests
     }
     ```
 
-- `rig-unit-test__jasmine-node`: A task which runs Jasmine Node with the specific configuration (suitable for nodejs testing - backend)
+- `rig-unit-test__mocha`: A task which runs Mocha with the specific configuration (suitable for nodejs testing - backend)
   - properties:
     - `src`: String or Array, refers to the source files for code coverage
     - `tests`: String or Array, refers to the source files of the unit tests
     - `istanbul`: Object, refers to istanbul configuration. See more at [gulp-istanbul](https://www.npmjs.com/package/gulp-istanbul)
-    - `jasmine`: Object, refers to jasmine-node configuration. See more at [gulp-jasmine-node](https://www.npmjs.com/package/gulp-jasmine-node)
+    - `mocha`: Object, refers to mocha configuration. See more at [gulp-mocha](https://www.npmjs.com/package/gulp-mocha)
     - `reports`: Object, refers to istanbul reporting configuration.
 
     ```
     {
-        taskname: 'rig-unit-test__karma',
+        taskname: 'rig-unit-test__mocha',
         dependency: [],
         src: './src/**/*.js',
         tests: './spec/**/*.js',
         istanbul: { includeUntested: true },
-        jasmine: { timeout: 10000 },
+        mocha: { reporter: 'nyan' },
         reports: {
             dir: './coverage',
             reporters: [ 'lcov' ],
