@@ -26,6 +26,7 @@ module.exports = function mochaTaskFunc( name, config ) {
     gulp.task( name, config.dependency, function () {
         return gulp.src( config.src )
             .pipe( istanbul( config.istanbul ) )
+            .pipe( istanbul.hookRequire() )
             .on( 'finish', function () {
                 return gulp.src( config.tests )
                     .pipe( mocha( config.mocha ) )
