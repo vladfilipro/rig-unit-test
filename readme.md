@@ -1,4 +1,6 @@
 # rig-unit-test
+[![Dependency Status](https://david-dm.org/vladfilipro/rig-unit-test.svg)](https://david-dm.org/vladfilipro/rig-unit-test)
+
 A rig containing tasks used for running unit tests
 
 ## How to use
