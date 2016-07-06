@@ -1,6 +1,6 @@
 {
     "name": "rig-unit-test",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "author": "Vlad Filip ( vlad.filip.dev@gmail.com )",
     "description": "A rig containing unit testing utilities",
     "keywords": [
@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "gulp": "~3.9.1",
-        "karma": "~0.13.21",
+        "karma": "~1.1.0",
         "jasmine-core": "~2.4.0",
         "karma-jasmine": "~1.0.2",
         "karma-phantomjs-launcher": "~1.0.0",
